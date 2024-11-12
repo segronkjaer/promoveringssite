@@ -74,6 +74,9 @@ export default {
         regular: "400",
         bold: "700",
       },
+      colors: {
+        newgrey: "#F4F1EC",
+      },
 
       /* Tilføj din egen farvepalette nedenfor */
       // colors: {
