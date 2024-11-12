@@ -4,17 +4,42 @@ import Button from '../components/Button.astro';
 import Link from '../components/Link.astro';
 import { Image } from 'astro:assets';
 import bastro_font from '../assets/images/bastro_font.svg';
-import thumbsup from "../assets/images/thumbsup.png";
+import plakat from '../assets/images/plakat.webp';
+import prompt2 from '../assets/images/prompt2.webp';
+import prompt3 from '../assets/images/prompt3.webp';
+import moodboard_done from '../assets/images/moodboard_done.webp';
+import skitse_1 from '../assets/images/skitse_1.webp';
+import skitse_2 from '../assets/images/skitse_2.webp';
+import proces2 from '../assets/images/proces2.webp';
 ---
 <MainLayout title="Titel">
 	<article class="pt-24 pb-16">
 		<Image class="w-full md:max-w-[800px] max-w-[480px] h-auto md:pl-16 pl-4" src={bastro_font} alt="font"/>
-		<p class="font-dm-sans md:pl-24 pl-6 pr-6 pt-2">'Bastro' er en kraftfuld font, der med sine brede streger og korte mellemrum skaber et moderne og digitalt udtryk, der får den til at skille sig ud.</p>
+		<p class="font-dm-sans md:pl-24 md:pr-[680px] pl-6 pr-6 pt-2">'Bastro' er en kraftfuld font, der med sine brede streger og korte mellemrum skaber et moderne og digitalt udtryk, der får den til at skille sig ud.</p>
 	</article>
 	<hr class="border-t-2 border-black w-full">
-	<article class="pt-36 pb-16">
-		<h1 class="font-dm-sans font-regular text-4xl md:pl-24 pl-6">OM BASTRO</h1>
-		<div class="md:grid md:grid-cols-2 md:gap-6 md:pl-24 pl-6 md:pr-24 pr-6">
+	<article id="sektion-1" class="pt-36 pb-16">
+		<h1 class="font-dm-sans font-regular text-4xl md:pl-48 pl-8 pb-6">OM BASTRO</h1>
+		<div class="md:grid md:grid-cols-2 md:grid-rows-2 md:pl-48 pl-8 md:pr-16 pr-6 gap-4">
+			<!-- Første billede: Kolonne 1, fylder 3 rækker -->
+			<div class="md:row-span-2">
+			  <Image class="w-full md:max-w-[800px] max-w-[400px] h-auto" src={plakat} alt="poster"/>
+			</div>
+		  
+			<!-- Andet billede: Kolonne 2, fylder 2 rækker -->
+			<div class="md:row-span-1">
+			  <Image class="w-full md:max-w-[420px] max-w-[200px] h-auto" src={prompt2} alt="prompt"/>
+			</div>
+		  
+			<!-- Tredje billede: Kolonne 2, fylder 1 række -->
+			<div class="md:row-span-1">
+			  <Image class="w-full md:max-w-[420px] max-w-[200px] h-auto" src={prompt3} alt="prompt"/>
+			</div>
+		  </div>
+		  <div>
+			<p class="font-dm-sans md:pl-48 pl-8 pr-8 pt-6 pb-12">Eksempler på hvordan Bastro kan bruges.</p>
+			</div>
+		<div class="md:grid md:grid-cols-2 md:gap-24 md:pl-48 pl-8 md:pr-48 pr-8">
 			<div>
 				<h2 class="font-dm-sans font-bold md:text-2xl text-xl">Fontens udtryk</h2>
 				<p>Fonten Bastro har enormt brede streger, en lav x-akse og så kort mellemrum mellem bogstaverne, at de rører hinanden. Det giver fonten et markant og robust udtryk.</p>
@@ -23,13 +48,59 @@ import thumbsup from "../assets/images/thumbsup.png";
 			</div>
 			
 			<div>
-				<h2 class="font-dm-sans font-bold md:text-2xl text-xl">Sådan kan den bruges</h2>
+				<h2 class="font-dm-sans font-bold md:text-2xl text-xl md:pt-0 pt-16">Sådan kan den bruges</h2>
 				<p>Netop fordi fonten har dette markante udtryk bør den udelukkende anvendes som display-font. Den egner sig eksempelvis ikke til brødtekst eller mindre overskrifter, da læsbarheden ikke ville være optimal.</p>
 				<br>
 				<p>Fonten er særlig god til overskrifter på eksempelvis plakater eller i andre kunstneriske sammenhænge, hvor valget af typografi spiller en afgørende rolle for det samlede æstetiske udtryk. Derudover egner den sig til design af logo.</p>
 				<br>
 				<p>Der skal helst være en stor kontrast til det resterende tekst, med henblik på størrelse og vægt, før den bliver vist på bedst mulige måde. Ellers kan udtrykket blive rodet og forvirrende.</p>
 			</div>
+		</div>
+	</article>
+	<article id="sektion-2" class="pt-36 pb-16">
+		<h1 class="font-dm-sans font-regular text-4xl md:pl-48 pl-8 pb-6">PROCES</h1>
+		<div class="md:grid md:grid-cols-2 md:grid-rows-1 md:pl-48 pl-8 md:pr-48 pr-6 md:gap-24">
+			<!-- Tekstindhold: Kolonne 1, span 1 -->
+			<div class="md:col-span-1">
+			 <h2 class="font-dm-sans font-bold md:text-2xl text-xl">Inspiration</h2>
+			 <p class="font-dm-sans font-regular">Jeg startede med søge efter inspiration til min font på Pinterest og samlede de, der inspirerede mig i et moodboard, som kan ses på billedet til højre.</p>
+			 <br>
+			 <p class="font-dm-sans font-regular">Jeg blev særligt draget af de meget tykke skrifter, da jeg synes de skiller sig ud og tiltrækker opmærksomhed. Derudover synes jeg de egner sig godt til at være display-fonte og man har mange muligheder for at gøre dem unikke.</p>
+			</div>
+		  
+			<!-- Billede og tekst: Kolonne 2, span 2 -->
+			<div class="md:col-span-1">
+			  <Image class="w-full md:max-w-[800px] max-w-[400px] h-auto" src={moodboard_done} alt="moodboard"/>
+			  <p class="font-dm-sans font-regular pt-6">Moodboard over forskellige fonte</p>
+			</div>
+		</div>
+	</article>
+	<article class="pt-12 pb-16">
+		<h2 class="font-dm-sans font-bold md:text-2xl text-xl md:pl-48 pl-8 pb-4">Udformning af fonten</h2>
+		<div class="md:grid md:grid-cols-3 md:pl-48 pl-8 md:pr-48 pr-6">
+			<!-- 1 billede i hver kolonne 
+			<div class="md:col-span-1">
+			  <Image class="w-full md:max-w-[300px] max-w-[400px]" src={skitse_1} alt="skitse"/>
+			  <p class="font-dm-sans font-regular pt-6">Skitser tegnet i hånden</p>
+			</div>
+			<div class="md:col-span-1">
+				<Image class="w-full md:max-w-[200px] max-w-[400px] h-auto" src={skitse_2} alt="skitse"/>
+			</div>
+			<div class="md:col-span-1">
+				<Image class="w-full md:max-w-[800px] max-w-[400px] h-auto" src={proces2} alt="illustrationer"/>
+				<p class="font-dm-sans font-regular pt-6">Rentegning i Illustrator (1) og efterbehandling (2)</p>
+			</div>-->
+			<div class="md:col-span-1">
+				<Image class="w-full h-46 object-cover" src={skitse_1} alt="skitse"/>
+				<p class="font-dm-sans font-regular pt-6">Skitser tegnet i hånden</p>
+			  </div>
+			  <div class="md:col-span-1">
+				  <Image class="w-full h-46 object-covero" src={skitse_2} alt="skitse"/>
+			  </div>
+			  <div class="md:col-span-1">
+				  <Image class="w-full h-full object-cover" src={proces2} alt="illustrationer"/>
+				  <p class="font-dm-sans font-regular pt-6">Rentegning i Illustrator (1) og efterbehandling (2)</p>
+			  </div>
 		</div>
 	</article>
 </MainLayout>
