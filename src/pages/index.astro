@@ -3,13 +3,33 @@ import MainLayout from "../layouts/MainLayout.astro";
 import Button from '../components/Button.astro';
 import Link from '../components/Link.astro';
 import { Image } from 'astro:assets';
+import bastro_font from '../assets/images/bastro_font.svg';
 import thumbsup from "../assets/images/thumbsup.png";
 ---
 <MainLayout title="Titel">
-	<article>
-		<h1 class="font-dm-sans text-4xl font-bold">Index overskrift</h1>
-		<Button>Klik!</Button>
-		<p>Link til <Link href="https://www.kea.dk" target="_blank">En anden side</Link></p>
-		<Image src={thumbsup} alt=""></Image>
+	<article class="pt-24 pb-16">
+		<Image class="w-full md:max-w-[800px] max-w-[480px] h-auto md:pl-16 pl-4" src={bastro_font} alt="font"/>
+		<p class="font-dm-sans md:pl-24 pl-6 pr-6 pt-2">'Bastro' er en kraftfuld font, der med sine brede streger og korte mellemrum skaber et moderne og digitalt udtryk, der får den til at skille sig ud.</p>
+	</article>
+	<hr class="border-t-2 border-black w-full">
+	<article class="pt-36 pb-16">
+		<h1 class="font-dm-sans font-regular text-4xl md:pl-24 pl-6">OM BASTRO</h1>
+		<div class="md:grid md:grid-cols-2 md:gap-6 md:pl-24 pl-6 md:pr-24 pr-6">
+			<div>
+				<h2 class="font-dm-sans font-bold md:text-2xl text-xl">Fontens udtryk</h2>
+				<p>Fonten Bastro har enormt brede streger, en lav x-akse og så kort mellemrum mellem bogstaverne, at de rører hinanden. Det giver fonten et markant og robust udtryk.</p>
+				<br>
+				<p>Fonten er primært bygget op omkring firkantede former, hvilket især ses i bogstavernes hulrum, som i B, a og o. Det gør, at fonten har et moderne og digitalt look.</p>
+			</div>
+			
+			<div>
+				<h2 class="font-dm-sans font-bold md:text-2xl text-xl">Sådan kan den bruges</h2>
+				<p>Netop fordi fonten har dette markante udtryk bør den udelukkende anvendes som display-font. Den egner sig eksempelvis ikke til brødtekst eller mindre overskrifter, da læsbarheden ikke ville være optimal.</p>
+				<br>
+				<p>Fonten er særlig god til overskrifter på eksempelvis plakater eller i andre kunstneriske sammenhænge, hvor valget af typografi spiller en afgørende rolle for det samlede æstetiske udtryk. Derudover egner den sig til design af logo.</p>
+				<br>
+				<p>Der skal helst være en stor kontrast til det resterende tekst, med henblik på størrelse og vægt, før den bliver vist på bedst mulige måde. Ellers kan udtrykket blive rodet og forvirrende.</p>
+			</div>
+		</div>
 	</article>
 </MainLayout>
