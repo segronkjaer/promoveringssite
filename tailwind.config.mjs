@@ -70,6 +70,7 @@ export default {
         "dm-sans": ['"DM Sans"', "sans-serif"],
       },
       fontWeight: {
+        light: "200",
         regular: "400",
         bold: "700",
       },
