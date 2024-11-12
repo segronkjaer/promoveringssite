@@ -19,24 +19,24 @@ import proces2 from '../assets/images/proces2.webp';
 	<hr class="border-t-2 border-black w-full">
 	<article id="sektion-1" class="pt-36 pb-16">
 		<h1 class="font-dm-sans font-regular text-4xl md:pl-48 pl-8 pb-6">OM BASTRO</h1>
-		<div class="md:grid md:grid-cols-2 md:grid-rows-2 md:pl-48 pl-8 md:pr-16 pr-6 gap-4">
+		<div class="grid grid-cols-2 grid-rows-2 md:pl-48 pl-8 md:pr-16 pr-6 md:gap-4 gap-2">
 			<!-- Første billede: Kolonne 1, fylder 3 rækker -->
-			<div class="md:row-span-2">
-			  <Image class="w-full md:max-w-[800px] max-w-[400px] h-auto" src={plakat} alt="poster"/>
+			<div class="row-span-2">
+			  <Image class="w-full md:max-w-[800px] max-w-[400px] h-full" src={plakat} alt="poster"/>
 			</div>
 		  
 			<!-- Andet billede: Kolonne 2, fylder 2 rækker -->
-			<div class="md:row-span-1">
+			<div class="row-span-1">
 			  <Image class="w-full md:max-w-[420px] max-w-[200px] h-auto" src={prompt2} alt="prompt"/>
 			</div>
 		  
 			<!-- Tredje billede: Kolonne 2, fylder 1 række -->
-			<div class="md:row-span-1">
+			<div class="row-span-1">
 			  <Image class="w-full md:max-w-[420px] max-w-[200px] h-auto" src={prompt3} alt="prompt"/>
 			</div>
-		  </div>
-		  <div>
-			<p class="font-dm-sans md:pl-48 pl-8 pr-8 pt-2 pb-12">Eksempler på hvordan Bastro kan bruges.</p>
+		</div>
+		<div>
+			<p class="font-dm-sans md:pl-48 pl-8 pr-8 pt-2 pb-12">Eksempler på hvordan Bastro kan bruges</p>
 			</div>
 		<div class="md:grid md:grid-cols-2 md:gap-24 md:pl-48 pl-8 md:pr-48 pr-8">
 			<div>
@@ -56,7 +56,7 @@ import proces2 from '../assets/images/proces2.webp';
 			</div>
 		</div>
 	</article>
-	<article id="sektion-2" class="pt-36 pb-16">
+	<article id="sektion-2" class="md:pt-24 pt-12 pb-16">
 		<h1 class="font-dm-sans font-regular text-4xl md:pl-48 pl-8 pb-6">PROCES</h1>
 		<div class="md:grid md:grid-cols-2 md:grid-rows-1 md:pl-48 pl-8 md:pr-48 pr-6 md:gap-24">
 			<!-- Tekstindhold: Kolonne 1, span 1 -->
@@ -68,13 +68,13 @@ import proces2 from '../assets/images/proces2.webp';
 			</div>
 		  
 			<!-- Billede og tekst: Kolonne 2, span 2 -->
-			<div class="md:col-span-1">
+			<div class="md:col-span-1 pt-6 md:pt-0">
 			  <Image class="w-full md:max-w-[800px] max-w-[400px] h-auto" src={moodboard_done} alt="moodboard"/>
 			  <p class="font-dm-sans font-regular pt-2">Moodboard over forskellige fonte</p>
 			</div>
 		</div>
 	</article>
-	<article class="pt-12 pb-16">
+	<article class="md:pt-12 pt-6 pb-16">
 		<div class="md:grid md:grid-cols-2 md:grid-rows-1 md:pl-48 pl-8 md:pr-48 pr-6 md:gap-24">
 			<!-- Tekstindhold: Kolonne 1, span 1 -->
 			<div class="md:col-span-1">
@@ -85,7 +85,7 @@ import proces2 from '../assets/images/proces2.webp';
 			</div>
 		  
 			<!-- Billede og tekst: Kolonne 2, span 2 -->
-			<div class="md:col-span-1">
+			<div class="md:col-span-1 pt-6 md:pt-0 pb-6 md:pb-6">
 			  <Image class="w-full md:max-w-[800px] max-w-[400px] h-auto" src={ny_skitse} alt="skitser"/>
 			  <p class="font-dm-sans font-regular pt-2">Skitser tegnet i hånden</p>
 			</div>
