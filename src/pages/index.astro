@@ -8,8 +8,7 @@ import plakat from '../assets/images/plakat.webp';
 import prompt2 from '../assets/images/prompt2.webp';
 import prompt3 from '../assets/images/prompt3.webp';
 import moodboard_done from '../assets/images/moodboard_done.webp';
-import skitse_1 from '../assets/images/skitse_1.webp';
-import skitse_2 from '../assets/images/skitse_2.webp';
+import ny_skitse from '../assets/images/ny_skitse.webp';
 import proces2 from '../assets/images/proces2.webp';
 ---
 <MainLayout title="Titel">
@@ -37,7 +36,7 @@ import proces2 from '../assets/images/proces2.webp';
 			</div>
 		  </div>
 		  <div>
-			<p class="font-dm-sans md:pl-48 pl-8 pr-8 pt-6 pb-12">Eksempler på hvordan Bastro kan bruges.</p>
+			<p class="font-dm-sans md:pl-48 pl-8 pr-8 pt-2 pb-12">Eksempler på hvordan Bastro kan bruges.</p>
 			</div>
 		<div class="md:grid md:grid-cols-2 md:gap-24 md:pl-48 pl-8 md:pr-48 pr-8">
 			<div>
@@ -71,36 +70,39 @@ import proces2 from '../assets/images/proces2.webp';
 			<!-- Billede og tekst: Kolonne 2, span 2 -->
 			<div class="md:col-span-1">
 			  <Image class="w-full md:max-w-[800px] max-w-[400px] h-auto" src={moodboard_done} alt="moodboard"/>
-			  <p class="font-dm-sans font-regular pt-6">Moodboard over forskellige fonte</p>
+			  <p class="font-dm-sans font-regular pt-2">Moodboard over forskellige fonte</p>
 			</div>
 		</div>
 	</article>
 	<article class="pt-12 pb-16">
-		<h2 class="font-dm-sans font-bold md:text-2xl text-xl md:pl-48 pl-8 pb-4">Udformning af fonten</h2>
-		<div class="md:grid md:grid-cols-3 md:pl-48 pl-8 md:pr-48 pr-6">
-			<!-- 1 billede i hver kolonne 
+		<div class="md:grid md:grid-cols-2 md:grid-rows-1 md:pl-48 pl-8 md:pr-48 pr-6 md:gap-24">
+			<!-- Tekstindhold: Kolonne 1, span 1 -->
 			<div class="md:col-span-1">
-			  <Image class="w-full md:max-w-[300px] max-w-[400px]" src={skitse_1} alt="skitse"/>
-			  <p class="font-dm-sans font-regular pt-6">Skitser tegnet i hånden</p>
+			 <h2 class="font-dm-sans font-bold md:text-2xl text-xl">Udformning af fonten</h2>
+			 <p class="font-dm-sans font-regular">Ud fra moodboardet valgte jeg en font, som jeg ønskede at arbejde videre med, og lavede en håndtegnet skitse af den.</p>
+			 <br>
+			 <p class="font-dm-sans font-regular">Jeg gav min font navnet 'Bastro', da jeg synes det rummer noget robust og bombastisk. Derefter tegnede jeg en skitse af ordet. Efterfølgende digitaliserede jeg og finjusterede de forskellige bogstaver i Illustrator.</p>
 			</div>
+		  
+			<!-- Billede og tekst: Kolonne 2, span 2 -->
 			<div class="md:col-span-1">
-				<Image class="w-full md:max-w-[200px] max-w-[400px] h-auto" src={skitse_2} alt="skitse"/>
+			  <Image class="w-full md:max-w-[800px] max-w-[400px] h-auto" src={ny_skitse} alt="skitser"/>
+			  <p class="font-dm-sans font-regular pt-2">Skitser tegnet i hånden</p>
 			</div>
+		</div>
+		<div class="md:grid md:grid-cols-2 md:grid-rows-1 md:pl-48 pl-8 md:pr-48 pr-6 md:gap-24">
+			<!-- Tekstindhold: Kolonne 1, span 1 -->
+			<div class="md:col-span-1 md:pt-12">
+			 <p class="font-dm-sans font-regular">Da det første resultat ikke helt levede op til mine forventninger, eksperimenterede jeg med forskellige effekter i Illustrator, blandet andet 'warp,' men det gav heller ikke helt det udtryk jeg ønskede.</p>
+			 <br>
+			 <p class="font-dm-sans font-regular">Jeg endte med at strække i fonten, så den blev en del bredere end udgangspunktet. Man kan tydeligt se forskellen mellem billede 1 og 2. Jeg var tilfreds med stilen, så det blev mit endelige resultat.</p>
+			</div>
+		  
+			<!-- Billede og tekst: Kolonne 2, span 2 -->
 			<div class="md:col-span-1">
-				<Image class="w-full md:max-w-[800px] max-w-[400px] h-auto" src={proces2} alt="illustrationer"/>
-				<p class="font-dm-sans font-regular pt-6">Rentegning i Illustrator (1) og efterbehandling (2)</p>
-			</div>-->
-			<div class="md:col-span-1">
-				<Image class="w-full h-46 object-cover" src={skitse_1} alt="skitse"/>
-				<p class="font-dm-sans font-regular pt-6">Skitser tegnet i hånden</p>
-			  </div>
-			  <div class="md:col-span-1">
-				  <Image class="w-full h-46 object-covero" src={skitse_2} alt="skitse"/>
-			  </div>
-			  <div class="md:col-span-1">
-				  <Image class="w-full h-full object-cover" src={proces2} alt="illustrationer"/>
-				  <p class="font-dm-sans font-regular pt-6">Rentegning i Illustrator (1) og efterbehandling (2)</p>
-			  </div>
+			  <Image class="w-full md:max-w-[800px] max-w-[400px] h-auto" src={proces2} alt="proces"/>
+			  <p class="font-dm-sans font-regular pt-2">Rentegning i Illustrator (1) og efterbehandling (2)</p>
+			</div>
 		</div>
 	</article>
 </MainLayout>
